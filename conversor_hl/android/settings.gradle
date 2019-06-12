@@ -1,0 +1,3 @@
+rootProject.name = 'conversor_hl'
+
+include ':app'
