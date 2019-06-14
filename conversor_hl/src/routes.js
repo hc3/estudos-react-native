@@ -1,7 +1,12 @@
-import { createStackNavigator } from 'react-navigation';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 import Main from './pages/main';
 
-export default createStackNavigatior({
-    Main,
+const Nav = createStackNavigator({
+    Main: {
+        screen:Main,
+        navigationOptions:{ header:null }
+    }
 });
+
+export default createAppContainer(Nav);
